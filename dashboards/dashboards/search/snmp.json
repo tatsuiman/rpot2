@@ -1,0 +1,19 @@
+{
+    "title": "SNMP",
+    "description": "",
+    "hits": 0,
+    "columns": [
+      "snmp.community",
+      "snmp.id_orig_h",
+      "snmp.version",
+      "@meta.geoip_orig.country_code2"
+    ],
+    "sort": [
+      "@timestamp",
+      "desc"
+    ],
+    "version": 1,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"index\":\"bro-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[{\"meta\":{\"negate\":false,\"index\":\"bro-*\",\"key\":\"@meta.stream\",\"value\":\"snmp\",\"disabled\":false,\"alias\":null},\"query\":{\"match\":{\"@meta.stream\":{\"query\":\"snmp\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+    }
+}

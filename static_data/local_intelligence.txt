@@ -1,0 +1,2 @@
+#fields	indicator	indicator_type	meta.source	meta.do_notice	meta.if_in
+192.168.11.80	Intel::ADDR	local_intelligence	T	-

@@ -1,0 +1,30 @@
+<div ng-controller="area3dVisParams">
+  <label> Chart Type: </label>
+  <select class="form-control" ng-model="vis.params.graphSelect" ng-options="x.name for x in data.graphTypes track by x.id">
+  </select>
+  <br />
+  <label>Show Perspective</label>
+  <input type="checkbox" ng-model="vis.params.showPerspective" />
+  <br />
+  <label>Show Grid</label>
+  <input type="checkbox" ng-model="vis.params.showGrid" />
+  <br />
+  <label>Show Shadow</label>
+  <input type="checkbox" ng-model="vis.params.showShadow" />
+  <br />
+  <label>Keep Aspect Ratio</label>
+  <input type="checkbox" ng-model="vis.params.keepAspectRatio" />
+  <br />
+  <br />
+
+  <label>X Axis Label</label>
+  <input type="text" ng-model="vis.params.xLabel" />
+  <br />
+  <label>Y Axis Label</label>
+  <input type="text" ng-model="vis.params.yLabel" />
+  <br />
+  <label>Z Axis Label</label>
+  <input type="text" ng-model="vis.params.zLabel" />
+  <br />
+
+</div>

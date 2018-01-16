@@ -1,0 +1,10 @@
+{
+  "title": "src_dest_port_3d",
+  "visState": "{\"title\":\"src_dest_port_3d\",\"type\":\"area3d\",\"params\":{\"graphSelect\":{\"id\":\"grid\",\"name\":\"Grid\"},\"showPerspective\":true,\"showGrid\":true,\"showShadow\":false,\"keepAspectRatio\":true,\"xLabel\":\"src_port\",\"yLabel\":\"dest_port\",\"zLabel\":\"count\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"@meta.orig_port\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"@meta.resp_port\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"row\":true}}],\"listeners\":{}}",
+  "uiStateJSON": "{}",
+  "description": "",
+  "version": 1,
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"bro-*\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+  }
+}

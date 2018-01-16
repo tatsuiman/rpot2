@@ -1,0 +1,13 @@
+{
+  "title": "CONN",
+  "hits": 0,
+  "description": "",
+  "panelsJSON": "[{\"col\":1,\"id\":\"conn-protocols-over-time\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"conn-top-responding-asn\",\"panelIndex\":4,\"row\":8,\"size_x\":3,\"size_y\":6,\"type\":\"visualization\"},{\"col\":4,\"id\":\"conn-top-originating-asn\",\"panelIndex\":2,\"row\":8,\"size_x\":3,\"size_y\":6,\"type\":\"visualization\"},{\"col\":7,\"id\":\"conn-top-responding-country\",\"panelIndex\":5,\"row\":5,\"size_x\":3,\"size_y\":6,\"type\":\"visualization\"},{\"col\":10,\"id\":\"conn-top-originating-country\",\"panelIndex\":3,\"row\":5,\"size_x\":3,\"size_y\":6,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":3,\"panelIndex\":6,\"type\":\"visualization\",\"id\":\"meta_orig_cc\",\"col\":7,\"row\":11},{\"size_x\":6,\"size_y\":3,\"panelIndex\":7,\"type\":\"visualization\",\"id\":\"meta_resp_cc\",\"col\":1,\"row\":14},{\"size_x\":6,\"size_y\":3,\"panelIndex\":8,\"type\":\"visualization\",\"id\":\"meta_stream\",\"col\":7,\"row\":17},{\"size_x\":6,\"size_y\":3,\"panelIndex\":9,\"type\":\"visualization\",\"id\":\"meta_resp_ip\",\"col\":1,\"row\":17},{\"size_x\":6,\"size_y\":3,\"panelIndex\":10,\"type\":\"visualization\",\"id\":\"meta_orig_ip\",\"col\":7,\"row\":14},{\"size_x\":6,\"size_y\":3,\"panelIndex\":11,\"type\":\"visualization\",\"id\":\"meta_system\",\"col\":1,\"row\":5}]",
+  "optionsJSON": "{\"darkTheme\":false}",
+  "uiStateJSON": "{\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-10\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-11\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+  "version": 1,
+  "timeRestore": false,
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+  }
+}

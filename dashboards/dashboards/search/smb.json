@@ -1,0 +1,22 @@
+{
+  "title": "SMB",
+  "description": "",
+  "hits": 0,
+  "columns": [
+    "smb_mapping.path",
+    "smb_files.path",
+    "smb_files.name",
+    "@meta.orig_host",
+    "@meta.resp_host",
+    "smb_files.action",
+    "smb_mapping.share_type"
+  ],
+  "sort": [
+    "@timestamp",
+    "desc"
+  ],
+  "version": 1,
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"bro-*\",\"query\":{\"query_string\":{\"query\":\"@meta.stream:smb_*\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+  }
+}

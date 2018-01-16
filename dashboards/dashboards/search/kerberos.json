@@ -1,0 +1,21 @@
+{
+  "title": "KERBEROS",
+  "description": "",
+  "hits": 0,
+  "columns": [
+    "@meta.orig_host",
+    "@meta.resp_host",
+    "kerberos.client",
+    "kerberos.service",
+    "kerberos.request_type",
+    "kerberos.success"
+  ],
+  "sort": [
+    "@timestamp",
+    "desc"
+  ],
+  "version": 1,
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"bro-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[{\"meta\":{\"negate\":false,\"index\":\"bro-*\",\"key\":\"@meta.stream\",\"value\":\"kerberos\",\"disabled\":false,\"alias\":null},\"query\":{\"match\":{\"@meta.stream\":{\"query\":\"kerberos\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+  }
+}

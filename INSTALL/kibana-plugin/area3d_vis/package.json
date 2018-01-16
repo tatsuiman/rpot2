@@ -1,0 +1,37 @@
+{
+  "name": "area3d_vis",
+  "version": "5.5.2",
+  "authors": [
+    "Juan Carniglia <juan.carniglia@gmail.com>"
+  ],
+  "description": "Kibana 5.0 3D Graph Visualization Plugin",
+  "main": "index.js",
+  "homepage": "https://github.com/JuanCarniglia/area3d_vis",
+  "repository": "https://github.com/JuanCarniglia/area3d_vis.git",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "private": false,
+  "scripts": {
+    "test": "gulp test",
+    "test:coverage": "gulp coverage",
+    "start": "gulp dev",
+    "precommit": "gulp lint",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.8",
+    "bluebird": "^3.3.1",
+    "eslint": "^2.1.0",
+    "eslint-plugin-mocha": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-zip": "3.1.0",
+    "husky": "^0.10.2",
+    "lodash": "^4.4.0",
+    "minimist": "1.2.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.4.4",
+    "rsync": "^0.4.0",
+    "vis": "^4.17.0"
+  }
+}

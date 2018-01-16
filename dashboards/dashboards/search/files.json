@@ -1,0 +1,21 @@
+{
+  "title": "FILES",
+  "description": "",
+  "hits": 0,
+  "columns": [
+    "files.md5",
+    "files.extracted",
+    "files.source",
+    "files.tx_hosts",
+    "files.rx_hosts",
+    "files.mime_type"
+  ],
+  "sort": [
+    "@timestamp",
+    "desc"
+  ],
+  "version": 1,
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"bro-*\",\"query\":{\"query_string\":{\"query\":\"@meta.stream:files\",\"analyze_wildcard\":true}},\"filter\":[{\"meta\":{\"negate\":false,\"index\":\"bro-*\",\"key\":\"@meta.stream\",\"value\":\"files\",\"disabled\":false,\"alias\":null,\"type\":\"phrase\"},\"query\":{\"match\":{\"@meta.stream\":{\"query\":\"files\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"highlightAll\":true,\"version\":true}"
+  }
+}

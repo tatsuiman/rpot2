@@ -1,0 +1,13 @@
+{
+  "title": "DHCP",
+  "hits": 0,
+  "description": "",
+  "panelsJSON": "[{\"id\":\"dhcp_assigned_ip\",\"type\":\"visualization\",\"panelIndex\":3,\"size_x\":3,\"size_y\":4,\"col\":1,\"row\":6},{\"col\":4,\"id\":\"dhcp_mac\",\"panelIndex\":2,\"row\":6,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"id\":\"dhcp\",\"type\":\"search\",\"panelIndex\":4,\"size_x\":6,\"size_y\":5,\"col\":1,\"row\":1,\"columns\":[\"@meta.orig_host\",\"@meta.resp_host\",\"dhcp.assigned_ip\",\"dhcp.mac\",\"dhcp.lease_time\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+  "optionsJSON": "{\"darkTheme\":false}",
+  "uiStateJSON": "{\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+  "version": 1,
+  "timeRestore": false,
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+  }
+}

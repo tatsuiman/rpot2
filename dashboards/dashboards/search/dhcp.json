@@ -1,0 +1,20 @@
+{
+  "title": "DHCP",
+  "description": "",
+  "hits": 0,
+  "columns": [
+    "@meta.orig_host",
+    "@meta.resp_host",
+    "dhcp.assigned_ip",
+    "dhcp.mac",
+    "dhcp.lease_time"
+  ],
+  "sort": [
+    "@timestamp",
+    "desc"
+  ],
+  "version": 1,
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"bro-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"bro-*\",\"key\":\"@meta.stream\",\"negate\":false,\"value\":\"dhcp\"},\"query\":{\"match\":{\"@meta.stream\":{\"query\":\"dhcp\",\"type\":\"phrase\"}}}}],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+  }
+}

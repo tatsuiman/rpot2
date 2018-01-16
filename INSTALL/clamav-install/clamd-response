@@ -1,0 +1,7 @@
+#!/bin/sh
+
+users=$(who | awk '{print $1}'|sort -u)
+for user in $users
+do
+	DISPLAY=:0 sudo -u $user notify-send "ウイルスを検知しました" "検知名(${CLAM_VIRUSEVENT_VIRUSNAME})\nファイルパス($CLAM_VIRUSEVENT_FILENAME)"
+done

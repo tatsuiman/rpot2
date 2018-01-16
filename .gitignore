@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# install
+INSTALL/bro/bro/
+INSTALL/clamav-install/clamav-0.99.3-beta1/
+INSTALL/kafka/librdkafka-0.9.4/
+INSTALL/kafka/metron-bro-plugin-kafka/
+INSTALL/suricata/oisf/
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.state
+.DS_Store
+*.deb
+feed/blocklist-ipsets
+feed/maltrail
+feed/virusshare_hash
+feed/private
+!feed/private/empty
+backup_bro.json.gz
+backup_suricata.json.gz
+backup_clamd.json.gz
+
+config/output.bro
+extract_files
+!extract_files/empty
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover

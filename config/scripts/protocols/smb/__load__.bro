@@ -1,0 +1,1 @@
+@load ./smb-ransomware.bro

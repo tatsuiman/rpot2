@@ -1,0 +1,14 @@
+@load ./dns-filter.bro
+@laod ./largeUpload.bro
+@load ./multi-user-agent.bro
+@load ./tor2web.bro
+@load ./unknown_service.bro
+@load ./AV-detection.bro
+@load ./Mac-version-detection.bro
+@load ./iPhone-detection.bro
+@load ./tls-fingerprinting.bro
+@load ./tlsfp_db.bro
+@load ./uniq-hashes-flag.bro
+@load ./clickbot.bro
+@load ./detect-insecure-protos.bro
+@load ./conn-add-geoip.bro

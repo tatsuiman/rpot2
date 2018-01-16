@@ -1,0 +1,5 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+0 6 * * *   root	/usr/sbin/oinkmaster/oinkmaster -C /etc/oinkmaster.conf -o /usr/local/etc/suricata/rules/ >/dev/null 2>&1
+

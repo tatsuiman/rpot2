@@ -1,0 +1,24 @@
+name: Bro Intel Alert
+type: frequency
+index: bro-*
+
+use_strftime_index: true
+num_events: 1
+timeframe:
+  minutes: 1
+
+filter:
+- term:
+    intel.@version: 1
+
+alert_text: "ioc: {0} source: {1} where: {2}"
+alert_text_type: alert_text_only
+alert_text_args:
+    - intel.seen_indicator
+    - intel.sources
+    - intel.seen_where
+doc_type: 'detection'
+
+alert:
+- "slack"
+

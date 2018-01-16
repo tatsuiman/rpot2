@@ -1,0 +1,22 @@
+name: Twiter Stream Attack Keyword found.
+type: frequency
+index: twitter-*
+use_strftime_index: true
+num_events: 1
+timeframe:
+  minutes: 1
+
+filter:
+- match:
+     message: 'Attack|offline|サーバダウン'
+
+doc_type: 'stream'
+alert_text: '@{0} {1}'
+alert_text_type: alert_text_only
+alert_text_args:
+    - user
+    - message
+
+alert:
+- "slack"
+

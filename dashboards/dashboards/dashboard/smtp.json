@@ -1,0 +1,13 @@
+{
+  "title": "SMTP",
+  "hits": 0,
+  "description": "",
+  "panelsJSON": "[{\"id\":\"smtp_version_chart\",\"type\":\"visualization\",\"panelIndex\":1,\"size_x\":10,\"size_y\":3,\"col\":1,\"row\":1},{\"id\":\"smtp_hello\",\"type\":\"visualization\",\"panelIndex\":2,\"size_x\":3,\"size_y\":6,\"col\":1,\"row\":4},{\"id\":\"smtp_mailfrom\",\"type\":\"visualization\",\"panelIndex\":3,\"size_x\":4,\"size_y\":6,\"col\":4,\"row\":4},{\"id\":\"smtp_last_reply\",\"type\":\"visualization\",\"panelIndex\":4,\"size_x\":3,\"size_y\":6,\"col\":8,\"row\":4}]",
+  "optionsJSON": "{\"darkTheme\":false}",
+  "uiStateJSON": "{\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+  "version": 1,
+  "timeRestore": false,
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+  }
+}

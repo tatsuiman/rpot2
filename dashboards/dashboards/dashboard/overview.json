@@ -1,0 +1,13 @@
+{
+  "title": "OVERVIEW",
+  "hits": 0,
+  "description": "",
+  "panelsJSON": "[{\"col\":1,\"id\":\"log-types-over-time\",\"panelIndex\":2,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"suricata-severity-over-time\",\"panelIndex\":5,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":8,\"panelIndex\":6,\"type\":\"visualization\",\"id\":\"src_dest_port_3d\",\"col\":1,\"row\":9},{\"size_x\":3,\"size_y\":4,\"panelIndex\":7,\"type\":\"visualization\",\"id\":\"meta_orig_cc\",\"col\":7,\"row\":5},{\"size_x\":3,\"size_y\":4,\"panelIndex\":8,\"type\":\"visualization\",\"id\":\"meta_resp_cc\",\"col\":10,\"row\":5},{\"size_x\":6,\"size_y\":4,\"panelIndex\":9,\"type\":\"visualization\",\"id\":\"meta_system\",\"col\":7,\"row\":1},{\"size_x\":3,\"size_y\":4,\"panelIndex\":10,\"type\":\"visualization\",\"id\":\"meta_orig_ip\",\"col\":7,\"row\":17},{\"size_x\":3,\"size_y\":4,\"panelIndex\":11,\"type\":\"visualization\",\"id\":\"meta_resp_ip\",\"col\":10,\"row\":17},{\"size_x\":3,\"size_y\":4,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"meta_orig_port\",\"col\":1,\"row\":17},{\"size_x\":3,\"size_y\":4,\"panelIndex\":13,\"type\":\"visualization\",\"id\":\"meta_resp_port\",\"col\":4,\"row\":17},{\"size_x\":6,\"size_y\":8,\"panelIndex\":14,\"type\":\"visualization\",\"id\":\"host_network\",\"col\":7,\"row\":9}]",
+  "optionsJSON": "{\"darkTheme\":false}",
+  "uiStateJSON": "{\"P-7\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-10\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-11\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-13\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+  "version": 1,
+  "timeRestore": false,
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+  }
+}
