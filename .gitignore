@@ -32,11 +32,7 @@ var/
 .state
 .DS_Store
 *.deb
-feed/blocklist-ipsets
-feed/maltrail
-feed/virusshare_hash
-feed/private
-!feed/private/empty
+feed
 backup_bro.json.gz
 backup_suricata.json.gz
 backup_clamd.json.gz

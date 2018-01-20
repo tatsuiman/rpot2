@@ -54,6 +54,12 @@ cd ..
 #git clone https://github.com/super-a1ice/virusshare_hash
 #cd ..
 
+mkdir -p ./feed/list
+cd ./feed/list
+wget http://www.rpot.net/shodan.txt -O shodan.txt
+wget http://www.rpot.net/rapid7.txt -O rapid7.txt
+cd ../..
+
 # update intel script
 python bin/intel.py 'feed/maltrail/trails/static/malware/*.txt,feed/blocklist-ipsets/*.ipset,feed/private/*.intel' > config/intel-config.bro
 sudo oinkmaster -C /etc/oinkmaster.conf -o /usr/local/etc/suricata/rules/
