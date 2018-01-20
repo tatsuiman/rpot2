@@ -54,11 +54,10 @@ cd ..
 #git clone https://github.com/super-a1ice/virusshare_hash
 #cd ..
 
-mkdir -p ./feed/list
-cd ./feed/list
+cd hunting
 wget http://www.rpot.net/shodan.txt -O shodan.txt
 wget http://www.rpot.net/rapid7.txt -O rapid7.txt
-cd ../..
+cd ..
 
 # update intel script
 python bin/intel.py 'feed/maltrail/trails/static/malware/*.txt,feed/blocklist-ipsets/*.ipset,feed/private/*.intel' > config/intel-config.bro

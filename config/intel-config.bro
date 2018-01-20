@@ -801,7 +801,6 @@ redef Intel::read_files += {
 	"feed/blocklist-ipsets/esentire_22072014a_com.ipset",
 	"feed/blocklist-ipsets/hphosts_mmt.ipset",
 	"feed/blocklist-ipsets/normshield_high_spam.ipset",
-	"feed/blocklist-ipsets/hphosts_ats.ipset",
-	"feed/private/misp.bro.ADMIN.intel"
+	"feed/blocklist-ipsets/hphosts_ats.ipset"
 };
 
