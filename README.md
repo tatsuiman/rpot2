@@ -21,7 +21,7 @@ Quick scan
 $ cd /opt/rpot
 $ ./update.sh
 $ git clone https://github.com/tatsu-i/malware-traffic-analysis.net
-$ bro -r malware-traffic-analysis.net/2017-10-19-Necurs-Botnet-malspam-pushing-Locky.pcap ./config/quick-hunter.bro
+$ ./scan-pcap.sh malware-traffic-analysis.net/2017-10-19-Necurs-Botnet-malspam-pushing-Locky.pcap quick test-quickscan
 ```
 
 Intelligence scan
@@ -29,7 +29,7 @@ Intelligence scan
 $ cd /opt/rpot
 $ ./update.sh
 $ git clone https://github.com/tatsu-i/malware-traffic-analysis.net
-$ bro -r malware-traffic-analysis.net/2017-10-19-Necurs-Botnet-malspam-pushing-Locky.pcap ./config/intel-hunter.bro
+$ ./scan-pcap.sh malware-traffic-analysis.net/2017-10-19-Necurs-Botnet-malspam-pushing-Locky.pcap intel test-intelscan
 ```
 
 Threat hunting
