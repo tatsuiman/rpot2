@@ -15,8 +15,12 @@ $ bash ./install-ubuntu1604.sh
 ```
 
 ## Usage
+```
+$ cd /opt/rpot
+$ ./scan-pcap.sh [pcap file path] [intel|standard|quick] [scan name]
+```
 
-Quick scan
+### Quick scan
 ```
 $ cd /opt/rpot
 $ ./update.sh
@@ -24,7 +28,7 @@ $ git clone https://github.com/tatsu-i/malware-traffic-analysis.net
 $ ./scan-pcap.sh malware-traffic-analysis.net/2017-10-19-Necurs-Botnet-malspam-pushing-Locky.pcap quick test-quickscan
 ```
 
-Intelligence scan
+### Intelligence scan
 ```
 $ cd /opt/rpot
 $ ./update.sh
@@ -32,7 +36,7 @@ $ git clone https://github.com/tatsu-i/malware-traffic-analysis.net
 $ ./scan-pcap.sh malware-traffic-analysis.net/2017-10-19-Necurs-Botnet-malspam-pushing-Locky.pcap intel test-intelscan
 ```
 
-Threat hunting
+### Threat hunting
 ```
 $ cd /opt/rpot
 $ git clone https://github.com/tatsu-i/virusshare_hash
