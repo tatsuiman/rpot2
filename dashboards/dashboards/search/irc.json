@@ -8,7 +8,8 @@
     "irc.command",
     "irc.value",
     "@meta.orig_host",
-    "@meta.resp_host"
+    "@meta.resp_host",
+    "irc.addl"
   ],
   "sort": [
     "@timestamp",
