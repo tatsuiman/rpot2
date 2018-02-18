@@ -1,15 +1,29 @@
 #!/bin/bash
 INSTALL_USER=$USER
+# install x-pack
+# You need register license (https://register.elastic.co/registration/)
+INSTALL_XPACK='N'
+INSTALL_FULL='N'
+
 is_failed() {
 	if [ $? -ne 0 ]; then
 		echo "The command was not successful.";
 		exit 1
 	fi;
 }
-# ask install x-pack
-# You need register license (https://register.elastic.co/registration/)
-INSTALL_XPACK='N'
 
+for OPT in "$@"
+do
+	case $OPT in
+		'-f'|'-full' )
+			INSTALL_FULL='Y'
+			;;
+		'-x'|'-xpack' )
+			INSTALL_XPACK='Y'
+			;;
+	esac
+	shift
+done
 # Java install
 sudo apt -y update
 sudo add-apt-repository ppa:webupd8team/java -y
@@ -21,7 +35,7 @@ sudo apt -y install oracle-java8-installer
 # upgrade
 sudo apt -y upgrade
 
-sudo git clone http://github.com/tatsu-i/rpot  /opt/rpot
+sudo git clone --depth 1 --single-branch -b master http://github.com/tatsu-i/rpot /opt/rpot
 sudo chown ${INSTALL_USER}:${INSTALL_USER} -R /opt/rpot
 cd /opt/rpot/INSTALL
 sudo mkdir -p /opt/rpot/extract_files/
@@ -43,7 +57,9 @@ cd ..
 ETH=$(ifconfig -a | sed 's/[ \t].*//;/^$/d' |head -n 1)
 sudo cp bro.service /lib/systemd/system/bro.service
 sudo sed -i -e "s/__ETH__/${ETH}/g" /lib/systemd/system/bro.service 
-sudo systemctl enable bro.service
+if [ $INSTALL_FULL = 'Y' ];then
+	sudo systemctl enable bro.service
+fi
 cd ..
 
 # install bro kafka plugin
@@ -72,12 +88,18 @@ cd ..
 # install suricata
 cd ./suricata/
 ./install.sh
+if [ $INSTALL_FULL = 'Y' ];then 
+	sudo systemctl enable suricata.service
+	sudo systemctl start suricata.service
+fi
 cd ..
 
 # install clamav
-cd ./clamav-install
-./install.sh
-cd ..
+if [ $INSTALL_FULL = 'Y' ];then
+	cd ./clamav-install
+	./install.sh
+	cd ..
+fi
 
 # install suricata
 cd ./suricata
@@ -150,6 +172,9 @@ cd /opt/rpot
 ./init.sh
 ./update.sh
 
+
 # install elastalert
-cd /opt/rpot/INSTALL/elastalert
-./install.sh
+if [ $INSTALL_FULL = 'Y' ];then
+	cd /opt/rpot/INSTALL/elastalert
+	./install.sh
+fi

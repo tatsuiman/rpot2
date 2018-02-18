@@ -17,8 +17,6 @@ sudo cp suricata.yaml /usr/local/etc/suricata/suricata.yaml
 sudo cp suricata.service /lib/systemd/system/suricata.service
 ETH=$(ifconfig -a | sed 's/[ \t].*//;/^$/d' |head -n 1)
 sudo sed -i -e "s/__ETH__/${ETH}/g" /lib/systemd/system/suricata.service
-sudo systemctl enable suricata.service
-sudo systemctl start suricata.service
 
 sudo cp update-rules /etc/cron.d/
 sudo chown root:root /etc/cron.d/update-rules 

@@ -24,4 +24,3 @@ sudo chmod 2755 /var/log/clamav
 sudo ldconfig
 sudo systemctl enable clamd
 sudo systemctl start clamd
-
