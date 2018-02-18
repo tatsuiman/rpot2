@@ -46,7 +46,7 @@ This build was created and tested using Ubuntu 16.04.
 | RDP | ○ | ○ | × | 
 | RFB | ○ | ○ | × | 
 | RPC | ○ | × | × | 
-| SIP | ○ | ○ | × | 
+| SIP | ○ | ○ | ○ | 
 | SMB | ○ | ○ | ○ | 
 | SMTP | ○ | ○ | ○ | 
 | SNMP | ○ | ○ | ○ | 
