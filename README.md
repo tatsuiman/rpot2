@@ -8,6 +8,58 @@ This build was created and tested using Ubuntu 16.04.
 ![architecture](https://github.com/tatsu-i/rpot/raw/master/screenshot/architecture.png "architecture")
 
 
+### Protocol coverage
+
+| Protocol | Decode Payload |  ElasticSearch Output | Kibana Visualization |
+| :--- | :---: | :---: | :---:|
+| ARP  | ○ | × | × | 
+| AYIYA  | ○ | × | × | 
+| BackDoor |○ | × | × | 
+| BitTorrent |○ | × | × | 
+| DCE RPC  | ○ | ○ | × | 
+| DHCP  | ○ | ○ | ○ | 
+| DNP3  | ○ | ○ | × | 
+| DNS  | ○ | ○ | ○ | 
+| File  | ○ | ○ | ○ | 
+| [Finger](https://en.wikipedia.org/wiki/Finger_protocol)  | ○ | × | × | 
+| FTP  | ○ | ○ | × | 
+| [Gnutella](http://en.wikipedia.org/wiki/Gnutella) | ○ | × | × | 
+| GSSAPI | ○ | × | × | 
+| GTPv1 | ○ | × | × | 
+| HTTP | ○ | ○ | ○ | 
+| ICMP | ○ | ○ | ○ | 
+| [Ident](http://en.wikipedia.org/wiki/ident_protocol) | ○ | × | × | 
+| IMAP | ○ | × | × | 
+| IRC | ○ | ○ | ○ | 
+| kerberos | ○ | ○ | × | 
+| [Login](https://tools.ietf.org/html/rfc1258.html) | ○ | × | × | 
+| [MIME](http://en.wikipedia.org/wiki/MIME) | ○ | × | × | 
+| [Modbus](https://en.wikipedia.org/wiki/Modbus) | ○ | ○ | × | 
+| MySQL | ○ | ○ | × | 
+| NCP | ○ | × | × | 
+| NetBios | ○ | ○ | ○ | 
+| NTLM | ○ | ○ | ○ | 
+| NTP | ○ | × | × | 
+| OpenFlow | ○ | ○ | ○ | 
+| POP3 | ○ | × | × | 
+| RADIUS | ○ | ○ | × | 
+| RDP | ○ | ○ | × | 
+| RFB | ○ | ○ | × | 
+| RPC | ○ | × | × | 
+| SIP | ○ | ○ | × | 
+| SMB | ○ | ○ | ○ | 
+| SMTP | ○ | ○ | ○ | 
+| SNMP | ○ | ○ | ○ | 
+| SOCKS | ○ | ○ | × | 
+| SSH | ○ | ○ | ○ | 
+| SSL | ○ | ○ | ○ | 
+| Syslog | ○ | ○ | × | 
+| TCP | ○ | ○ | ○ | 
+| [Teredo](https://tools.ietf.org/html/rfc4380.html) | ○ | ○ | × | 
+| UDP | ○ | ○ | ○ | 
+| XMPP | ○ | × | × | 
+| ZIP | ○ | × | × | 
+
 ## Startup
 ```
 $ wget https://raw.githubusercontent.com/tatsu-i/rpot/master/INSTALL/install-ubuntu1604.sh 
