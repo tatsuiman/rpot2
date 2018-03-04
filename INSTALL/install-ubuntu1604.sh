@@ -145,27 +145,20 @@ sudo systemctl start kibana.service
 sudo systemctl enable logstash.service
 sudo systemctl start logstash.service
 
-# wait elasticsearch
-while ! nc -z localhost 9200; do   
-  sleep 0.1
-done
-
 # install x-pack
 case $INSTALL_XPACK in
 	Y)
-		echo -n 'license json file path: '
-		read $license_file
-		echo y | sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install x-pack
-		sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install x-pack
-		echo 'xpack.security.enabled: false' | sudo tee -a /etc/elasticsearch/elasticsearch.yml
-		curl -XPUT -u elastic:changeme 'http://localhost:9200/_xpack/license?acknowledge=true' -H "Content-Type: application/json" -d @${license_file}
-		sudo service elasticsearch restart
-		sudo service kibana restart
+		./x-pack/install.sh
 		;;
 	*)
 		echo -e "x-pack not installed."
 		;;
 esac
+
+# wait elasticsearch
+while ! nc -z localhost 9200; do   
+  sleep 0.1
+done
 
 # init database
 cd /opt/rpot
