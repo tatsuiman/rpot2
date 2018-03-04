@@ -1,0 +1,4 @@
+#!/bin/sh
+node_num=1
+shard_num=3
+master_node_num=$(expr $node_num \* $shard_num / 2 + 1)

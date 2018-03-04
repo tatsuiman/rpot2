@@ -1,7 +1,5 @@
 #!/bin/bash
-node_num=1
-shard_num=3
-master_node_num=$(expr $node_num \* $shard_num / 2 + 1)
+source ./config.sh
 function main() {
 	trap catch ERR
 	for i in $(seq $node_num)
