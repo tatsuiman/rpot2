@@ -116,9 +116,9 @@ sudo apt-get purge -y nodejs npm
 sudo npm install elasticdump -g
 
 # install ELK
-wget https://artifacts.elastic.co/downloads/kibana/kibana-5.5.2-amd64.deb
-wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.5.2.deb
-wget https://artifacts.elastic.co/downloads/logstash/logstash-5.5.2.deb
+wget https://artifacts.elastic.co/downloads/kibana/kibana-6.2.2-amd64.deb
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.2.deb
+wget https://artifacts.elastic.co/downloads/logstash/logstash-6.2.2.deb
 sudo dpkg -i *.deb
 sudo usermod -a -G adm logstash
 sudo cp ./logstash/logstash-kafka-bro.conf /etc/logstash/conf.d
@@ -129,9 +129,9 @@ sudo cp ./logstash/logstash-clamav-es.conf /etc/logstash/conf.d/
 sudo /usr/share/logstash/bin/logstash-plugin install logstash-output-exec
 
 # install kibana plugins
-cd ./kibana-plugin
-./install.sh
-cd ..
+#cd ./kibana-plugin
+#./install.sh
+#cd ..
 
 # register and start service
 sudo systemctl enable zookeeper

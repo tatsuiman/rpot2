@@ -50,7 +50,7 @@ This build was created and tested using Ubuntu 16.04.
 | SMB | ○ | ○ | ○ | 
 | SMTP | ○ | ○ | ○ | 
 | SNMP | ○ | ○ | ○ | 
-| SOCKS | ○ | ○ | × | 
+| SOCKS | ○ | ○ | ○ | 
 | SSH | ○ | ○ | ○ | 
 | SSL | ○ | ○ | ○ | 
 | Syslog | ○ | ○ | × | 

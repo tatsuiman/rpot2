@@ -1,0 +1,9 @@
+RPOT 1.1 (2018-03-20)
+- Change Dashboard for Kibana6
+- Change Installer for ELK6
+- Remove INTEL Dashboard
+- Added logstash data enrichment from CSV
+
+RPOT 1.0 (2017-01-21)
+======================
+Initial release.

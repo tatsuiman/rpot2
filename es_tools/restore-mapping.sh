@@ -35,4 +35,4 @@ while [ "$1" != "" ]; do
 done
 
 index=$(basename -s .json.gz ${INFILE})
-gzip -dc ${INFILE} | elasticdump --input=$ --output="http://${ES_HOST}:9200/${index}" --type=data
+cat ${INFILE} | elasticdump --input=$ --output="http://${ES_HOST}:9200/${index}" --type=mapping 

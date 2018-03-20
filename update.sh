@@ -32,9 +32,10 @@ mkdir -p feed/private
 cd ./feed
 rm -rf ./maltrail
 git clone https://github.com/stamparm/maltrail
+rm /tmp/maltrail*.csv
 for i in $(ls ./maltrail/trails/static/malware/*.txt)
 do
-	python ../bin/parse.py $i
+	python ../bin/parse.py $i /tmp/maltrail
 done
 
 rm -rf ./blocklist-ipsets
@@ -42,11 +43,19 @@ git clone https://github.com/firehol/blocklist-ipsets
 cd ./blocklist-ipsets
 git checkout master
 cd ..
+rm /tmp/blocklist-ipsets*.csv
 for i in $(ls ./blocklist-ipsets/*.ipset)
 do
-	python ../bin/parse.py $i
+	python ../bin/parse.py $i /tmp/blocklist-ipsets
 done
-
+wget http://www.rpot.net/shodan.txt -O shodan.txt
+wget http://www.rpot.net/rapid7.txt -O rapid7.txt
+python ../bin/parse.py shodan.txt /tmp/whitelist
+python ../bin/parse.py rapid7.txt /tmp/whitelist
+sudo mv /tmp/blocklist-ipsets-*.csv /tmp/maltrail*.csv /tmp/whitelist*.csv /etc/logstash/conf.d/translate/
+wget http://www.rpot.net/alexa-top-1m.csv -O alexa-top-1m.csv
+wget http://www.rpot.net/cisco-umbrella-top-1m.csv -O cisco-umbrella-top-1m.csv
+sudo mv alexa-top-1m.csv cisco-umbrella-top-1m.csv /etc/logstash/conf.d/translate/
 cd ..
 
 # update hunting keyword list
@@ -54,12 +63,6 @@ cd ..
 #git clone https://github.com/super-a1ice/virusshare_hash
 #cd ..
 
-cd hunting
-wget http://www.rpot.net/shodan.txt -O shodan.txt
-wget http://www.rpot.net/rapid7.txt -O rapid7.txt
-cd ..
-
 # update intel script
-python bin/intel.py 'feed/maltrail/trails/static/malware/*.txt,feed/blocklist-ipsets/*.ipset,feed/private/*.intel' > config/intel-config.bro
 sudo oinkmaster -C /etc/oinkmaster.conf -o /usr/local/etc/suricata/rules/
 
