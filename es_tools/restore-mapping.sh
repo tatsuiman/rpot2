@@ -1,5 +1,5 @@
 #!/bin/bash
-INFILE="bro.json.gz"
+INFILE="bro.json"
 ES_HOST="localhost"
 function print_usage() {
     echo "Usage: $0 [-l host] [-i infile]" 1>&2
@@ -34,5 +34,5 @@ while [ "$1" != "" ]; do
     shift 2
 done
 
-index=$(basename -s .json.gz ${INFILE})
-cat ${INFILE} | elasticdump --input=$ --output="http://${ES_HOST}:9200/${index}" --type=mapping 
+index=$(basename -s .json ${INFILE})
+cat ${INFILE} | elasticdump --input=$ --output="http://${ES_HOST}:9200/${index}*" --type=mapping 
