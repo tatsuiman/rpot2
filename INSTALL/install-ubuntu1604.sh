@@ -124,6 +124,7 @@ sudo usermod -a -G adm logstash
 sudo cp ./logstash/logstash-kafka-bro.conf /etc/logstash/conf.d
 sudo cp ./logstash/logstash-suricata-es.conf /etc/logstash/conf.d
 sudo cp ./logstash/logstash-clamav-es.conf /etc/logstash/conf.d/
+sudo cp ./logstash/pipelines.yml /etc/logstash/pipelines.yml 
 
 # install logstash plugins
 sudo /usr/share/logstash/bin/logstash-plugin install logstash-output-exec
