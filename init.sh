@@ -1,7 +1,37 @@
+#!/bin/bash
+ES_HOST="localhost"
+function print_usage() {
+    echo "Usage: $0 [-l host]" 1>&2
+    exit 1
+}
+while [ "$1" != "" ]; do
+    case $1 in
+        -l | -host )
+            ES_HOST=$2
+            if [ "$ES_HOST" = "" ]; then
+                echo "Error: Missing Elasticsearch URL"
+                print_usage
+                exit 1
+            fi
+            ;;
+
+        -h | -help )
+            print_usage
+            exit 0
+            ;;
+
+         *)
+            echo "Error: Unknown option $2"
+            print_usage
+            exit 1
+            ;;
+    esac
+    shift 2
+done
+
 sudo service suricata stop
 sudo service logstash stop
 sudo service kafka stop
-ES_HOST="localhost"
 
 rm -rf extract_files/*
 touch ./extract_files/empty
