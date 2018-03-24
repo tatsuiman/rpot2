@@ -14,7 +14,7 @@
         "savedSearchId": "dns",
         "version": 1,
         "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
         }
       }
     },
@@ -31,7 +31,7 @@
         "savedSearchId": "dns",
         "version": 1,
         "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
         }
       }
     },
@@ -48,7 +48,7 @@
         "savedSearchId": "dns",
         "version": 1,
         "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
         }
       }
     },
@@ -65,7 +65,7 @@
         "savedSearchId": "dns",
         "version": 1,
         "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
         }
       }
     },
@@ -82,7 +82,7 @@
         "savedSearchId": "dns",
         "version": 1,
         "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
         }
       }
     },
@@ -96,10 +96,10 @@
         "visState": "{\"title\":\"DNS - NXDOMAIN\",\"type\":\"table\",\"params\":{\"perPage\":100,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"dns.query.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Query\"}}]}",
         "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
         "description": "",
-        "savedSearchId": "dns-nxdomain",
+        "savedSearchId": "dns",
         "version": 1,
         "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"@meta.stream:dns AND dns.rcode_name:NXDOMAIN\",\"language\":\"lucene\"}}"
+          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"filter\":[],\"query\":{\"query\":\"@meta.stream:dns AND dns.rcode_name:NXDOMAIN\",\"language\":\"lucene\"}}"
         }
       }
     },
@@ -115,7 +115,7 @@
         "description": "",
         "version": 1,
         "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"query\":{\"language\":\"lucene\",\"query\":{\"match_all\":{}}},\"filter\":[]}"
+          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
         }
       }
     },
@@ -132,7 +132,7 @@
         "savedSearchId": "conn",
         "version": 1,
         "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
         }
       }
     },
@@ -149,7 +149,7 @@
         "savedSearchId": "conn",
         "version": 1,
         "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
         }
       }
     },
