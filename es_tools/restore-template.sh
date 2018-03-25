@@ -1,5 +1,5 @@
 #!/bin/bash
-INFILE="bro.json"
+INDEX="bro"
 ES_HOST="localhost"
 function print_usage() {
     echo "Usage: $0 [-l host] [-i infile]" 1>&2
@@ -17,7 +17,7 @@ while [ "$1" != "" ]; do
             ;;
 
         -i | -index )
-            INFILE=$2
+            INDEX=$2
             ;;
 
         -h | -help )
@@ -34,5 +34,4 @@ while [ "$1" != "" ]; do
     shift 2
 done
 
-index=$(basename -s .json ${INFILE})
-cat ${INFILE} | elasticdump --input=$ --output="http://${ES_HOST}:9200/${index}*" --type=mapping 
+curl -XPUT "http://${ES_HOST}:9200/_template/${INDEX}_index" -H 'Content-type:application/json' -d @template_${INDEX}.json

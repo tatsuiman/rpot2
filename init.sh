@@ -48,7 +48,5 @@ sudo service logstash start
 sudo service kafka start
 
 cd /opt/rpot/es_tools
-curl -XPUT ${ES_HOST}:9200/bro-test
-curl -XPUT ${ES_HOST}:9200/suricata-test
-./restore-mapping.sh -i bro.json -l ${ES_HOST}
-./restore-mapping.sh -i suricata.json -l ${ES_HOST}
+./restore-template.sh -i bro -l ${ES_HOST}
+./restore-template.sh -i suricata -l ${ES_HOST}
