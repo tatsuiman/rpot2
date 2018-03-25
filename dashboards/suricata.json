@@ -4,7 +4,7 @@
     {
       "id": "9c54f450-2ac4-11e8-8249-cb755c34d5e4",
       "type": "visualization",
-      "updated_at": "2018-03-25T03:47:50.331Z",
+      "updated_at": "2018-03-25T05:24:59.970Z",
       "version": 1,
       "attributes": {
         "title": "SURICATA Severity Over Time",
@@ -20,7 +20,7 @@
     {
       "id": "6d229660-2ac4-11e8-8249-cb755c34d5e4",
       "type": "visualization",
-      "updated_at": "2018-03-25T03:47:50.331Z",
+      "updated_at": "2018-03-25T05:24:59.970Z",
       "version": 1,
       "attributes": {
         "title": "SURICATA Alerts",
@@ -36,7 +36,7 @@
     {
       "id": "f1ccabe0-2f7d-11e8-b278-b34d48535b60",
       "type": "search",
-      "updated_at": "2018-03-25T03:47:50.331Z",
+      "updated_at": "2018-03-25T05:24:59.970Z",
       "version": 1,
       "attributes": {
         "title": "SURICATA",
@@ -62,7 +62,7 @@
     {
       "id": "f09752d0-25fe-11e8-917c-bbb0e17070d1",
       "type": "index-pattern",
-      "updated_at": "2018-03-25T03:47:50.331Z",
+      "updated_at": "2018-03-25T05:24:59.970Z",
       "version": 1,
       "attributes": {
         "title": "suricata-*",
@@ -73,7 +73,7 @@
     {
       "id": "ce946b30-2ac4-11e8-8249-cb755c34d5e4",
       "type": "dashboard",
-      "updated_at": "2018-03-25T03:47:50.331Z",
+      "updated_at": "2018-03-25T05:24:59.970Z",
       "version": 1,
       "attributes": {
         "title": "SURICATA",
