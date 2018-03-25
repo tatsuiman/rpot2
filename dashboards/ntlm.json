@@ -4,7 +4,7 @@
     {
       "id": "57186540-2fdb-11e8-b278-b34d48535b60",
       "type": "visualization",
-      "updated_at": "2018-03-25T03:19:34.036Z",
+      "updated_at": "2018-03-25T03:46:36.522Z",
       "version": 1,
       "attributes": {
         "title": "NTLM Auth Over Time",
@@ -20,8 +20,8 @@
     {
       "id": "70c54580-2fdb-11e8-b278-b34d48535b60",
       "type": "visualization",
-      "updated_at": "2018-03-25T03:20:44.073Z",
-      "version": 2,
+      "updated_at": "2018-03-25T03:46:36.522Z",
+      "version": 1,
       "attributes": {
         "title": "NTLM Domainname",
         "visState": "{\"title\":\"NTLM Domainname\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ntlm.domainname.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
@@ -36,7 +36,7 @@
     {
       "id": "96926540-2fdb-11e8-b278-b34d48535b60",
       "type": "visualization",
-      "updated_at": "2018-03-25T03:21:20.532Z",
+      "updated_at": "2018-03-25T03:46:36.522Z",
       "version": 1,
       "attributes": {
         "title": "NTLM Hostname",
@@ -52,7 +52,7 @@
     {
       "id": "c26607d0-2fdb-11e8-b278-b34d48535b60",
       "type": "visualization",
-      "updated_at": "2018-03-25T03:22:34.061Z",
+      "updated_at": "2018-03-25T03:46:36.522Z",
       "version": 1,
       "attributes": {
         "title": "NTLM Username",
@@ -68,7 +68,7 @@
     {
       "id": "meta_system",
       "type": "visualization",
-      "updated_at": "2018-03-24T15:36:04.960Z",
+      "updated_at": "2018-03-25T03:46:36.522Z",
       "version": 1,
       "attributes": {
         "title": "meta_system",
@@ -84,42 +84,40 @@
     {
       "id": "conn-top-originating-country",
       "type": "visualization",
-      "updated_at": "2018-03-24T15:36:04.960Z",
+      "updated_at": "2018-03-25T03:46:36.522Z",
       "version": 1,
       "attributes": {
         "title": "CONN - Top Originating Country",
         "visState": "{\"title\":\"CONN - Top Originating Country\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"@meta.geoip_orig.country_code2.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Originating Country\"}}]}",
         "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
         "description": "",
-        "savedSearchId": "conn",
         "version": 1,
         "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"query\":{\"language\":\"lucene\",\"query\":{\"match_all\":{}}},\"filter\":[]}"
         }
       }
     },
     {
       "id": "conn-top-responding-country",
       "type": "visualization",
-      "updated_at": "2018-03-24T15:36:04.960Z",
+      "updated_at": "2018-03-25T03:46:36.522Z",
       "version": 1,
       "attributes": {
         "title": "CONN - Top Responding Country",
         "visState": "{\"title\":\"CONN - Top Responding Country\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"@meta.geoip_resp.country_code2.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Responding Country\"}}]}",
         "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
         "description": "",
-        "savedSearchId": "conn",
         "version": 1,
         "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"query\":{\"language\":\"lucene\",\"query\":{\"match_all\":{}}},\"filter\":[]}"
         }
       }
     },
     {
       "id": "24c56660-2fdb-11e8-b278-b34d48535b60",
       "type": "search",
-      "updated_at": "2018-03-25T03:23:19.264Z",
-      "version": 2,
+      "updated_at": "2018-03-25T03:46:36.522Z",
+      "version": 1,
       "attributes": {
         "title": "NTLM",
         "description": "",
@@ -145,8 +143,8 @@
     {
       "id": "e7697850-25fe-11e8-917c-bbb0e17070d1",
       "type": "index-pattern",
-      "updated_at": "2018-03-25T03:23:12.922Z",
-      "version": 54,
+      "updated_at": "2018-03-25T03:46:36.522Z",
+      "version": 1,
       "attributes": {
         "title": "bro-*",
         "timeFieldName": "@timestamp",
@@ -154,34 +152,9 @@
       }
     },
     {
-      "id": "conn",
-      "type": "search",
-      "updated_at": "2018-03-24T15:36:04.960Z",
-      "version": 1,
-      "attributes": {
-        "title": "CONN",
-        "description": "",
-        "hits": 0,
-        "columns": [
-          "@meta.geoip_resp.country_name",
-          "@meta.geoip_resp.region_name",
-          "conn.service",
-          "conn.proto"
-        ],
-        "sort": [
-          "@timestamp",
-          "desc"
-        ],
-        "version": 1,
-        "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"index\":\"e7697850-25fe-11e8-917c-bbb0e17070d1\",\"query\":{\"query\":{\"query_string\":{\"query\":\"@meta.stream:conn\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"negate\":false,\"index\":\"bro-*\",\"key\":\"@meta.stream\",\"value\":\"conn\",\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"params\":{\"query\":\"conn\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"@meta.stream\":{\"query\":\"conn\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"highlightAll\":true,\"version\":true}"
-        }
-      }
-    },
-    {
       "id": "709eb540-2fdc-11e8-b278-b34d48535b60",
       "type": "dashboard",
-      "updated_at": "2018-03-25T03:27:26.356Z",
+      "updated_at": "2018-03-25T03:46:36.522Z",
       "version": 1,
       "attributes": {
         "title": "NTLM",
