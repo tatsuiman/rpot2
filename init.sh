@@ -43,6 +43,7 @@ curl -XDELETE "${ES_HOST}:9200/bro-*"
 curl -XDELETE "${ES_HOST}:9200/suricata-*"
 ./load.sh
 sudo rm /usr/local/var/log/suricata/eve.json
+sudo rm /usr/local/var/log/suricata/unified2.alert.*
 sudo service suricata start
 sudo service logstash start
 sudo service kafka start
