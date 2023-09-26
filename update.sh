@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # update geoip
-wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
-wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCityv6-beta/GeoLiteCityv6.dat.gz
-wget http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz
-wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
+wget https://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
+wget https://geolite.maxmind.com/download/geoip/database/GeoLiteCityv6-beta/GeoLiteCityv6.dat.gz
+wget https://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz
+wget https://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
 gzip -d GeoLiteCity.dat.gz
 gzip -d GeoIPASNum.dat.gz
 gzip -d GeoLiteCityv6.dat.gz
@@ -16,9 +16,9 @@ sudo mv GeoIP.dat /usr/share/GeoIP/GeoIP.dat
 
 # update geoip for logstash
 sudo mkdir -p /etc/logstash/geoipdbs/
-wget http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz
-wget http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz
-wget http://geolite.maxmind.com/download/geoip/database/GeoLite2-ASN.tar.gz
+wget https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz
+wget https://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz
+wget https://geolite.maxmind.com/download/geoip/database/GeoLite2-ASN.tar.gz
 gunzip GeoLite2-Country.mmdb.gz
 gunzip GeoLite2-City.mmdb.gz
 tar zxpvf GeoLite2-ASN.tar.gz --strip-components=1 --wildcards '*.mmdb'
